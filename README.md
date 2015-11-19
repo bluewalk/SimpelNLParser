@@ -1,5 +1,5 @@
 # SimpelNLParser
-Parser for the network provider Simpel (NL)
+Parser for the network provider Simpel (NL) - http://www.simpel.nl
 
 ## Usage
 
