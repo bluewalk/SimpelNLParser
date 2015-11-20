@@ -35,7 +35,7 @@ class SimpelNLParser
 
     if ($data != null && $method != 'GET')
     {
-      curl_setopt($curl, CURLOPT_POSTFIELDS, $postdata);
+      curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
     }
     elseif ($data != null) {
       curl_setopt($curl, CURLOPT_URL, $this->url . $url . '?' . $this->http_build_query($data));
