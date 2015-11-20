@@ -97,18 +97,3 @@ class SimpelNLParser
     $this->doRequest('POST', $this->url . '/logout.aspx', $body);
   }
 }
-
-header('Content-type: application/json');
-
-if (isset($_GET['username']) && isset($_GET['password']))
-{
-  $parser = new SimpelNLParser();
-  $parser->doLogin($_GET['username'], $_GET['password']);
-  $usage = $parser->getUsage();
-  $parser->doLogout();
-
-  print json_encode($usage);
-}
-else {
-  print json_encode(array('error' => 'username or password missing'));
-}
