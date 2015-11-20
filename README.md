@@ -3,7 +3,7 @@ Parser for the network provider Simpel (NL) - http://www.simpel.nl
 
 ## Usage
 
-Place this PHP file on a webserver and query the php with the parameters ```username``` and ```password```. The result will look like the JSON below.
+Place these PHP files on a webserver and query index.php with the parameters ```username``` and ```password```. The result will look like the JSON below.
 
 ```javascript
 {
