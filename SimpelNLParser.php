@@ -31,7 +31,7 @@ class SimpelNLParser
     curl_setopt($curl, CURLOPT_COOKIEJAR, $this->cookiejar);
     curl_setopt($curl, CURLOPT_COOKIEFILE, $this->cookiejar);
 
-    curl_setopt($curl, CURLOPT_PROXY, '127.0.0.1:8888');
+    //curl_setopt($curl, CURLOPT_PROXY, '127.0.0.1:8888');
 
     if ($data != null && $method != 'GET')
     {
